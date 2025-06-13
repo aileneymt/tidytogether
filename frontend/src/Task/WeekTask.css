@@ -1,0 +1,40 @@
+.week-tasks {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: .5vh 1vw;
+    margin: 10px 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    color: #628DDE;
+    background-color: white;
+    border-radius: 15px;
+    padding: .5vh 1vw;
+    margin: 10px 0px;
+}
+
+.date-info {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    justify-content: center;
+    padding: .5vh 1vw;
+    margin: 10px 0px;
+
+    h3 {
+        margin: 0;
+    }
+}
+
+.priority.urgent {
+    color: #f44336;
+}
+
+.priority.low {
+    color: #c8e6c9;
+}
+
+.week-tasks p {
+    margin: 0 auto;
+}

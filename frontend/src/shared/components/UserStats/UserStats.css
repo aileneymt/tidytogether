@@ -1,0 +1,105 @@
+#user-info-and-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    width: auto;
+    
+}
+.topBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 0;
+    flex-wrap: nowrap;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    padding: 10px;
+}
+
+.user-info h3 {
+    margin: 0;
+    font-size: 1.25em;
+    color: #333;
+    
+}
+
+.user-info h4 {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #666;
+    text-transform: capitalize;
+}
+
+.weekly-tasks-info {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.weekly-stat {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.weekly-stat span {
+    font-size: 1.4em;
+    color: #007bff;
+}
+
+.gauges-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    width: 100%;
+}
+
+.gauges-container > * {
+    flex: 1;
+    max-width: 150px;
+}
+
+
+.lateTasksDisplay {
+    background-color: white;
+    color: #719ae7;
+    width: 45%;
+    border-radius: 15px;
+    padding: 15px;
+
+    h2 {
+        text-align: center;
+        margin-top: 3px;
+    }
+    
+    
+    .lateTasksContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 1rem;
+    }
+
+    hr {
+        border: 1px solid #719ae7;
+        margin: 5px 0;
+    }
+
+    .noOverdueMessage {
+        text-align: center;
+    }
+}

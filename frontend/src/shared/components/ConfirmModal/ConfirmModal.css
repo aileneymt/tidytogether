@@ -1,0 +1,19 @@
+.MuiDialog-container {
+
+    #confirmModalConfirmBtn {
+        background-color: #CCF6D6;
+        border-radius: 3rem;
+        border: none;
+        color: #628DDE;
+        margin-bottom: 1em;
+    }
+  
+    #confirmModalCancelBtn {
+        background-color: #fff;
+        border-radius: 3rem;
+        border: none;
+        color: #628DDE;
+        margin-bottom: 1em;
+    }
+
+}

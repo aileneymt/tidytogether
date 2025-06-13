@@ -1,0 +1,36 @@
+/* #home_options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+  
+    h3 {
+        padding: 0px 2vw;
+        font-size: 2rem;
+    }
+  
+    button {
+        margin-right: auto;
+        font-size: 2.5rem;
+        
+        transform: rotate(180deg);
+        z-index: 1;
+    }
+    i {
+        font-size: 2.5rem;
+    }
+}
+
+button {
+    background: none;
+    border: none;
+    color: white;
+  
+}
+
+#nav-drawer {
+    background-color: #628DDE;
+    color: white;
+    height: 100%;
+} */

@@ -1,0 +1,21 @@
+.today_task {
+    background-color: #FFBFD4;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 5px 15px;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+
+    input {
+        margin-left: auto;
+    }
+
+    box-shadow: 1px 2px 3px rgba(65, 110, 173, 0.5);
+}
+
+.today_task.completed {
+    background-color: #CCF6D6;
+    color: #628DDE;
+}

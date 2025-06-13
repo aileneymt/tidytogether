@@ -1,0 +1,100 @@
+.card {
+    background-color: white;
+    border-radius: 2em;
+    color: #628DEE;
+    padding: 1em;
+    flex: 1 1 calc(33.33% - 1em);
+    box-sizing: border-box;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+}
+
+.settings-tiles {
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+#deleteAccountBtn {
+    margin-bottom: 5em;
+    border-radius: 3em;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(57, 46, 46, 0.5); /* semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Make sure it's on top */
+}
+
+.modal-content {
+    border: 3px solid white;
+    background-color: #628DDE;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    max-width: 200px;
+}
+
+.modal-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+
+.updateButton {
+    background-color: #CCF6D6;
+    color: #628DDE;
+    padding: 3px 3px;
+    margin: auto;
+    width: 60%;
+    margin-top: 15px;
+    margin-bottom: 0px;
+
+}
+
+
+.cancelIcon {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.error {
+   
+    color: red;
+    text-align: center;
+    margin: auto;
+}
