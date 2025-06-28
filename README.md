@@ -1,6 +1,7 @@
 # Final Team Project
 
 ## TidyTogether
+Deployed on an AWS EC2 instance here: [http://18.208.153.191/](url)
 
 ## Progress Report
 
