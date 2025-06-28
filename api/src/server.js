@@ -7,7 +7,11 @@ const app = express();
 const routes = require('./routes.js');
 const PORT = process.env.PORT;
 
-app.use(cors());
+app.use(cors({
+  origin: 'http://18.208.153.191', 
+  credentials: true
+}));
+
 app.use(express.json());
 
 // logger middleware

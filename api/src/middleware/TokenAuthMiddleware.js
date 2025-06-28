@@ -58,7 +58,7 @@ exports.generateToken = (req, res, user) => {
   console.log('about to set cookie')
   res.cookie(TOKEN_COOKIE_NAME, token, {
     httpOnly: true,
-    secure: true,
+    secure: false,
     maxAge: 15 * 60 * 1000, // cookie expires in 15 minutes
   });
   console.log('set cookie')
@@ -68,7 +68,7 @@ exports.generateToken = (req, res, user) => {
 
 exports.removeToken = (req, res) => {
   res.cookie(TOKEN_COOKIE_NAME, "", {
-    secure: true,
+    secure: false,
     httpOnly: true,
     expire: new Date(-1000)
 

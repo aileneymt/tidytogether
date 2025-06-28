@@ -3,7 +3,7 @@ name: csc342project
 services:
   proxy:
     image: nginx:latest
-    restart: unless-stopped
+    restart: always
     volumes:
       - ./proxy/default.conf.template:/etc/nginx/templates/default.conf.template
     ports:
@@ -11,11 +11,11 @@ services:
 
   api:
     build: ./api
-    restart: unless-stopped
+    restart: always 
     volumes:
       - ./api/src:/app/api/src
-    # ports:
-    #   - '80:80'
+    ports:
+      - '8080:80'
     environment:
       - PORT=80
     env_file:
@@ -23,7 +23,7 @@ services:
 
   frontend:
     build: ./frontend
-    restart: unless-stopped
+    restart: always 
     volumes:
       - ./frontend/src:/app/frontend/src
       - ./frontend/vite.config.js:/app/frontend/vite.config.js

@@ -190,6 +190,8 @@ router.post('/login', (req, res) => {
         generateToken(req, res, user);
         res.json({ user: user });
     }).catch((err) => {
+	
+	console.error("Failed to login:", err)
         res.status(err.code || 500).json({ error: "Unable to login" });
     })
 });
@@ -203,6 +205,7 @@ router.post('/register', (req, res) => {
     UserDAO.registerUser(req.body).then(user => {
         res.json(user);
     }).catch(err => {
+	console.error("Failed to register new user:", err)
         res.status(err.code || 404).json({ error: err.message });
     })
 
