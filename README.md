@@ -85,4 +85,4 @@ While offline, users have the ability to access pages previously visited through
 
 ## Database ER Diagram
 
-![](https://github.ncsu.edu/engr-csc342/csc342-2025Spring-TeamC/blob/main/Milestone2/342_milestone2_ER.png)
+![](https://github.com/aileneymt/tidytogether/blob/master/tidytogether_er_diagram.png)
